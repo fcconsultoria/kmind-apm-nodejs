@@ -4,6 +4,10 @@
   "description": "Plugin Node.js para OpenTelemetry com autoinstrumentation e logger correlacionando traceId e spanId para Grafana Tempo.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fcconsultoria/kmind-apm-nodejs.git"
+  },
   "scripts": {
     "build": "tsc",
     "lint": "eslint . --ext .ts",
