@@ -1,0 +1,38 @@
+{
+  "name": "kmind-apm",
+  "version": "1.0.0",
+  "description": "Plugin Node.js para OpenTelemetry com autoinstrumentation e logger correlacionando traceId e spanId para Grafana Tempo.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --ext .ts",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "opentelemetry",
+    "tracing",
+    "logger",
+    "grafana",
+    "tempo",
+    "otel"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT",
+  "peerDependencies": {
+    "@opentelemetry/exporter-trace-otlp-http": "^0.203.0",
+    "@opentelemetry/resources": "^2.0.1",
+    "@opentelemetry/api": "^1.9.0",
+    "@opentelemetry/auto-instrumentations-node": "^0.62.0",
+    "@opentelemetry/exporter-otlp-http": "^0.26.0",
+    "@opentelemetry/sdk-metrics": "^2.0.1",
+    "@opentelemetry/sdk-node": "^0.203.0",
+    "@opentelemetry/sdk-trace-node": "^2.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6",
+    "@types/node": "^20.2.5",
+    "eslint": "^8.44.0",
+    "stacktrace-parser": "^0.1.11"
+  }
+}

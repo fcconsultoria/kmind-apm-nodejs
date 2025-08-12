@@ -1,0 +1,18 @@
+# Don’t publish source files or configs
+src/
+tests/
+__tests__/
+coverage/
+.eslintrc.json
+.prettierrc
+tsconfig.json
+.vitest.config.ts
+.vscode/
+.env
+
+# Ignore lockfiles
+package-lock.json
+yarn.lock
+
+# Ignore other dev tools
+*.log
